@@ -1,0 +1,30 @@
+body,
+html {
+    height: 100%;
+    background-color: #eee;
+}
+
+.bg {
+    background-image: url("../images/grey.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5%;
+}
+
+.myform {
+    border: solid;
+    border-style: dotted;
+    margin-left: 40%;
+    margin-right: 10%;
+}
+
+.rules {
+    color: coral;
+    text-align: left;
+}
+
+.player-console {
+    display: none;
+}

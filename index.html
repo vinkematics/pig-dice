@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script href="js\jquery-3.2.1.js"></script>
+    <script href="js\scripts.js"></script>
+</head>
+
+<body>
+    <div class="section1">
+
+        <div class=" jumbotron text-center">
+            <h1>Pig Dice</h1>
+        </div>
+        <div class="bg container">
+            <div class="rules">
+                <h2>Rules To to Play The game</h2>
+                <ul>
+                    <li>
+                        <h3>If the player rolls a 1, they score nothing and it becomes the next player's turn.</h3>
+                    </li>
+                    <li>
+                        <h3>If the player rolls any other number, it is added to their turn total and the player's turn continues.</h3>
+                    </li>
+                    <li>
+                        <h3>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</h3>
+                    </li>
+                    <li>
+                        <h2>To win: one of the players has to get 100 plus buttons</h2>
+                    </li>
+                </ul>
+                <!-- the form structure where the players enter theuir names starts here -->
+            </div>
+            <form id="myform player-1">
+                <div class="form-group">
+                    <label for="player1Name">Player 1 Name:</label>
+                    <input required placeholder="Enter First Player Name Here" class="player1Name form-control input-lg" type="text">
+                </div>
+            </form>
+            <form id="myform player-2">
+                <div class="form-group">
+                    <label for="player2Name">Player 2 Name:</label>
+                    <input required placeholder="Enter First Player Name Here" class="player2Name form-control input-lg" type="text">
+                </div>
+            </form>
+            <button id="start" class="btn-info btn-primary btn">Start</button>
+
+        </div>
+        
+        </div>
+
+
+    </div>
+
+
+
+    </div>
+</body>
+
+</html>
