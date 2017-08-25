@@ -1,3 +1,13 @@
+.player-console {
+    display: none;
+}
+
+.output {
+    color: aqua;
+    background-color: inherit;
+    margin-top: 30px;
+}
+
 body,
 html {
     height: 100%;

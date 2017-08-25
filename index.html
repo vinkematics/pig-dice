@@ -1,61 +1,89 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script href="js\jquery-3.2.1.js"></script>
-    <script href="js\scripts.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pig Dice Game</title>
 </head>
 
 <body>
-    <div class="section1">
+    <div class="jumbotron text-center">
+        <h1>A Game of Pig Dice</h1>
+    </div>
+    <div class="bg container">
+        <div class="rules">
+            <h2>Rules To to Play The game</h2>
+            <ul>
+                <li>
+                    <h3>If the player rolls a 1, they score nothing and it becomes the next player's turn.</h3>
+                </li>
+                <li>
+                    <h3>If the player rolls any other number, it is added to their turn total and the player's turn continues.</h3>
+                </li>
+                <li>
+                    <h3>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</h3>
+                </li>
+                <li>
+                    <h2>To win: one of the players has to get 100 plus points</h2>
+                </li>
+            </ul>
 
-        <div class=" jumbotron text-center">
-            <h1>Pig Dice</h1>
         </div>
-        <div class="bg container">
-            <div class="rules">
-                <h2>Rules To to Play The game</h2>
-                <ul>
-                    <li>
-                        <h3>If the player rolls a 1, they score nothing and it becomes the next player's turn.</h3>
-                    </li>
-                    <li>
-                        <h3>If the player rolls any other number, it is added to their turn total and the player's turn continues.</h3>
-                    </li>
-                    <li>
-                        <h3>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</h3>
-                    </li>
-                    <li>
-                        <h2>To win: one of the players has to get 100 plus buttons</h2>
-                    </li>
-                </ul>
-                <!-- the form structure where the players enter theuir names starts here -->
+
+        <!-- the form structure where the players enter theuir names starts here -->
+        <div class="start-menu">
+            <div class="">
+                <h1>Let's play Pig Dice!</h1>
+                <!--         form starts here-->
+                <form id="player-1">
+                    <div class="form-group">
+                        <label for="player1Name">Player 1 Name:</label>
+                        <input required class="player1Name form-control" type="text">
+                    </div>
+                </form>
+                <form id="player-2">
+                    <div class="form-group">
+                        <label for="player2Name">Player 2 Name:</label>
+                        <input required class="player2Name form-control" type="text">
+                    </div>
+                </form>
+                <button id="start" class="btn-info btn-lg btn">Start</button>
             </div>
-            <form id="myform player-1">
-                <div class="form-group">
-                    <label for="player1Name">Player 1 Name:</label>
-                    <input required placeholder="Enter First Player Name Here" class="player1Name form-control input-lg" type="text">
+        </div>
+        <!--    form ends here-->
+
+        <!--    the results are to be displayed in this area-->
+        <div class="output">
+            <div class="player-console container">
+
+                <h2>Inserting Sublimated Messages</h2>
+                <button id="new-game" class="btn-success btn">NEW GAME</button>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>Player 1: <span id="player1Name"><span></h2>
+              <button id="player1-roll" class="btn-success btn-lg btn">Roll</button>
+              <button id="player1-hold" class="btn-success btn-lg btn">Hold</button>
+            <h2>Dice Roll: <span id="die-roll-1"></span></h2>
+                        <p>Round Total: <span id="round-total-1"></span></p>
+                        <p>Total Score: <span id="total-score-1"></span></p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h2>Player 2: <span id="player2Name"><span></h2>
+            <button id="player2-roll" class="btn-success btn-lg btn">Roll</button>
+            <button id="player2-hold" class="btn-success btn-lg btn">Hold</button>
+            <h2>Dice Roll: <span id="die-roll-2"></span></h2>
+                        <p>Round Total: <span id="round-total-2"></span></p>
+                        <p>Total Score: <span id="total-score-2"></span></p>
+                    </div>
                 </div>
-            </form>
-            <form id="myform player-2">
-                <div class="form-group">
-                    <label for="player2Name">Player 2 Name:</label>
-                    <input required placeholder="Enter First Player Name Here" class="player2Name form-control input-lg" type="text">
-                </div>
-            </form>
-            <button id="start" class="btn-info btn-primary btn">Start</button>
+            </div>
+            <!--end of output area-->
 
         </div>
-        
-        </div>
-
-
-    </div>
-
-
-
-    </div>
 </body>
 
 </html>
